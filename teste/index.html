@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Calculadora de Gorjeta</title>
+</head>
+<body>
+    
+
+<div id="container">
+    <div id="topo">
+        <h1>Calculadora de gorjeta</h1>
+        <img src="imagens/gorjeta.jpg">
+    </div>
+
+    <div id="calculator">  
+      <form>
+        <p>Valor da conta
+          <p>
+            R$ <input id="total-conta" type="text" placeholder="Total da conta">
+            <p>Qualidade do serviço
+              <p>
+                <select id="taxa-servico">
+                    <option value="0.3">Excelente - 10%</option>
+                    <option value="0.2">Ótimo - 8%</option>
+                    <option value="0.15">Bom - 5%</option>
+                    <option value="0.1">Ruim - 2%</option>
+                </select><br><br>
+                <button type="button" id="calcular" onclick="calcular">Calcular</button>
+      </form>
+
+      <p>Valor da Gorjeta</p>
+      <input id="valor_gorj" type="text" placeholder=""><br>
+      <p>Valor total</p>
+      <input id="total" type="text" placeholder=""><br>
+
+    </div>  
+  </div>
+
+</body>
+</html>
